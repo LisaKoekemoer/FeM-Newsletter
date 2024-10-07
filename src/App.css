@@ -1,38 +1,298 @@
-.App {
-  text-align: center;
-}
+@media screen and (max-width: 1440px) and (min-width: 481px) {
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  body {
+      background-color: #36384D;
+      font-family: "Roboto", sans-serif;
+    }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  /* Newspaper Sign-Up */
+
+  .newspaper-container {
+    width: 928px;
+    height: 641px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+  }
+
+  .newspaper-content {
+    width: 376px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+
+  .newspaper-content h1 {
+    font-size: 56px;
+    font-weight: bold;
+    color: #242742;
+  }
+
+  .newspaper-content .intro-par {
+    font-size: 16px;
+    color: #242742;
+    margin-top: -30px;
+  }
+
+  .updates {
+    margin-top: 30px;
+  }
+
+  .updates div {
+    display: flex;
+    margin-bottom: -15px;
+  }
+
+  .updates img {
+    margin-right: 15px;
+  }
+
+  .email-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .email-container label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #242742;
+    margin-bottom: 10px;
+  }
+
+  .email-container input{
+    width: 357px;
+    height: 54px;
+    border: 1px solid #ABB0B8;
+    border-radius: 10px;
+    padding-left: 15px;
+  }
+
+  .email-container input::placeholder {
+    font-size: 16px;
+    color: #ABB0B8;
+  }
+
+  .email-container input:hover {
+    cursor: pointer;
+  }
+
+  .error-state {
+    color: #ff6257;
+  }
+
+  button {
+    width: 376px;
+    height: 56px;
+    border: none;
+    border-radius: 10px;
+    background-color: #242742;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-top: 30px;
+  }
+
+  button:hover, 
+  .success-container button:hover {
+    cursor: pointer;
+    background: rgb(255, 106, 58);
+    background: linear-gradient(90deg, rgba(255, 106, 58, 1) 0%, rgba(255, 82, 123, 1) 100%);
+  }
+
+  .newspaper-Image {
+    width: 400px;
+    height: 593px;
+    border-radius: 15px;
+    margin-top: 25px;
+    margin-left: 60px;
+  }
+
+  /* Success Modal */
+
+  .success-container {
+    width: 404px;
+    height: 370px;
+    background-color: #FFFFFF;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 25px;
+    padding: 75px 50px 75px 50px;
+  }
+
+  .success-container h1 {
+    font-size: 56px;
+    font-weight: bold;
+    color: #242742;
+    margin-top: 15px;
+  }
+
+  .success-container p {
+    font-size: 16px;
+    color: #242742;
+    margin-top: -20px;
+  }
+
+  .success-container button {
+    width: 376px;
+    height: 56px;
+    border: none;
+    border-radius: 20px;
+    background-color: #242742;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and (max-width: 480px) {
+  body {
+    background-color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .newspaper-container {
+    display: flex;
+    flex-direction: column-reverse;
+    
+  }
+
+  .newspaper-Image {
+    width: 500px;
+    height: 284px;
+    margin-top: -250px;
+    margin-left: 5px;
+    border-radius: 25px;
+    
+  }
+
+  .newspaper-content {
+    width: 327px;
+    margin: auto;
+    margin-top: 350px;
+  }
+
+  .newspaper-content h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #242742;
+  }
+
+  .intro-par {
+    font-size: 16px;
+    color: #242742;
+  }
+
+  .updates div {
+    display: flex;
+    align-items: center;
+  }
+
+  .updates img {
+    margin-right: 10px;
+  }
+
+  .updates p {
+    font-size: 16px;
+    color: #242742;
+  }
+
+  .email-container{
+    margin-top: 25px;
+  }
+
+  .email-container label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #242742;
+  }
+
+  .error-state {
+    color: #ff6257;
+  }
+
+  .email-container input{
+    width: 312px;
+    height: 56px;
+    border: 1px solid #ABB0B8;
+    border-radius: 10px;
+    padding-left: 15px;
+  }
+
+  .email-container input::placeholder {
+    font-size: 16px;
+    color: #ABB0B8;
+  }
+
+  button {
+    width: 327px;
+    height: 56px;
+    border: none;
+    border-radius: 10px;
+    background-color: #242742;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+
+  .success-container {
+    width: 327px;
+    height: 304px;
+    background-color: #FFFFFF;
+    margin: auto;
+    margin-top: 100px;
+  }
+
+  .success-container h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #242742;
+    margin-top: 25px;
+  }
+
+  .success-container p {
+    font-size: 16px;
+    color: #242742;
+    margin-top: -20px;
+  }
+
+  .success-container button {
+    width: 327px;
+    height: 56px;
+    border: none;
+    border-radius: 20px;
+    background-color: #242742;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-top: 200px;
+  }
+
+
+
+
+
+
+
+
+
+
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
